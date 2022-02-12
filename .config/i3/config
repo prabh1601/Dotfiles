@@ -51,7 +51,7 @@ client.focused #C3B1E1 #C3B1E1 #C3B1E1 #FF6961 #C3B1E1
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec -- no-startup-id dex --autostart --environment i3 
+exec --no-startup-id dex --autostart --environment i3 
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the 
 # screen before suspend. Use loginctl lock-session to lock your screen
@@ -235,7 +235,7 @@ bindsym $mod+a focus parent
 #*************************************************************************************************************************
 
 # start a terminal
-bindsym $mod+Return exec $term
+bindsym $mod+Return exec --no-startup-id $term
 
 # start rofi 
 bindsym --release Alt_L exec --no-startup-id "rofi -show drun -kb-cancel Alt_L"
@@ -244,15 +244,18 @@ bindsym --release Alt_L exec --no-startup-id "rofi -show drun -kb-cancel Alt_L"
 bindsym $mod+d exec --no-startup-id "dmenu_run -b"
 
 # start chrome 
-bindsym $mod+g exec "google-chrome-stable"
+bindsym $mod+g exec --no-startup-id "google-chrome-stable"
 
 # start flameshot (piece of screen)
 bindsym Control+Delete exec "flameshot gui"
 # Start flameshot (full screen)
 bindsym Print exec "flameshot screen"
 
-#Always lauch nitrogen in floating mode 
+#Always launch nitrogen in floating mode 
 for_window [class="Nitrogen"] floating enable
+
+#Always launch feh in floating mode
+for_window [class="feh"] floating enable
 
 
 #*************************************************************************************************************************
