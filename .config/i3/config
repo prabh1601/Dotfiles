@@ -247,9 +247,9 @@ bindsym $mod+d exec --no-startup-id "dmenu_run -b"
 bindsym $mod+g exec --no-startup-id "google-chrome-stable"
 
 # start flameshot (piece of screen)
-bindsym Control+Delete exec "flameshot gui"
+bindsym Control+Delete exec --no-startup-id "flameshot gui"
 # Start flameshot (full screen)
-bindsym Print exec "flameshot screen"
+bindsym Print exec --no-startup-id "flameshot screen"
 
 #Always launch nitrogen in floating mode 
 for_window [class="Nitrogen"] floating enable
