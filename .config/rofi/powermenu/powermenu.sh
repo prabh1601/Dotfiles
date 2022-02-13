@@ -7,7 +7,7 @@ uptime=$(uptime -p | sed -e 's/up //g')
 
 # Random colors
 styles=($(ls -p --hide="colors.rasi" $dir/styles))
-color="${styles[$(( $RANDOM % 8 ))]}"
+color="${styles[$(( $RANDOM % 6 ))]}"
 sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
 
 # Options
