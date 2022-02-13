@@ -9,6 +9,59 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
+; *****************************************************************
+; 				BAR
+; *****************************************************************
+[bar/i3]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-size = 4
+;border-color = #000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = DejaVuSans:pixelsize=10;1
+font-1 = Iosevka Nerd Font:pixelsize=10;1
+font-2 = siji:pixelsize=20;1
+
+modules-left = i3 xwindow
+modules-center = date
+modules-right = mpd pulseaudio battery powermenu
+
+;tray-position = left 
+;tray-padding = 2
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
 ; ***************************************************************************
 ;				   MODULES
 ; *************************************************************************
@@ -322,13 +375,19 @@ ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
+type = custom/text
+content = " "
+content-foreground = ${colors.secondary}
+click-left = ~/.config/rofi/powermenu/powermenu.sh &
+
+[module/old_powermenu]
 type = custom/menu
 
 expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = " "
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-separator = |
@@ -351,57 +410,6 @@ menu-2-0-exec = poweroff
 ;menu-2-1 = cancel
 ;menu-2-1-exec = menu-open-0
 
-; *****************************************************************
-; 				BAR
-; *****************************************************************
-[bar/i3]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 6.0
-fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 0
-line-color = #f00
-
-border-size = 4
-;border-color = #000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = DejaVuSans:pixelsize=10;1
-font-1 = Iosevka Nerd Font:pixelsize=10;1
-font-2 = siji:pixelsize=20;1
-
-modules-left = i3 xwindow
-modules-center = date
-modules-right = mpd pulseaudio battery powermenu
-
-;tray-position = left 
-;tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
 
 [settings]
 screenchange-reload = true
