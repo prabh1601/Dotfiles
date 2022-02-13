@@ -1,1 +1,7 @@
-@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
+@theme "/usr/share/rofi/themes/Monokai.rasi"
