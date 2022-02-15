@@ -1,0 +1,4 @@
+[module/corner-left]
+type = custom/text
+content = %{T9}%{T-}
+content-foreground = ${colors.bg-alt}

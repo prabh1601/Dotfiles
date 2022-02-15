@@ -8,6 +8,7 @@ include-file = /home/prabh/.config/polybar/Modules/battery.module
 include-file = /home/prabh/.config/polybar/Modules/date-time.module
 include-file = /home/prabh/.config/polybar/Modules/i3-workspace.module
 include-file = /home/prabh/.config/polybar/Modules/volume.module
+include-file = /home/prabh/.config/polybar/Modules/rounded-corner.module
 
 [margin/wm]
 margin-top = 5
@@ -18,15 +19,20 @@ screenchange-reload = true
 
 [bar/main]
 background = ${colors.bg}
-foreground = ${colors.fg}
+;foreground = ${colors.fg}
 width = 100%
 height = 30
 fixed-center = true
 radius = 6.0
-separator = " "
 cursor-click = pointer
 border-size = 5
 include-file = /home/prabh/.config/polybar/fonts.polybar 
+
+tray-position = left
+
+separator = " "
+;separator-foreground = 
+;separator-background = 
 
 modules-left = time date
 modules-center = i3-workspace

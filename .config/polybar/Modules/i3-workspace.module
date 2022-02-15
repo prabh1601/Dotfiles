@@ -13,7 +13,7 @@ label-mode-background = ${colors.rose-pink}
 
 ; focused = Active workspace on focused monitor
 label-focused = %{T7}%name%%{T-}
-label-focused-foreground = ${colors.light-blue}
+label-focused-foreground = ${colors.rose-pink}
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
