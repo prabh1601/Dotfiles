@@ -19,7 +19,7 @@ window {
 }
 
 prompt {
-    enabled:                        false;
+    enabled:                        true;
     padding:                        1% 1% 1% 0%;
     background-color:               @background-alt;
     text-color:                     @foreground;
@@ -27,21 +27,21 @@ prompt {
 
 textbox-prompt-colon {
     expand:                         false;
-    str:                            "Sure ?";
+    str:                            "| Sure ?";
     background-color:               @background-alt;
     text-color:                     @foreground;
     padding:                        0.2% 0.3% 1% 0.5%;
 }
 
 inputbar {
-    children:                       [ textbox-prompt-colon, prompt ];
+    children:                       [  prompt,textbox-prompt-colon ];
     background-color:               @background-alt;
     text-color:                     @foreground;
     expand:                         false;
     border:                         0% 0.2% 0.2% 0%;
     border-radius:                  1%;
     border-color:                   @border;
-    margin:                         0% 59.3% 0% 0%;
+    margin:                         0% 49.3% 0% 0%;
     padding:                        0.5%;
     position:                       center;
 }

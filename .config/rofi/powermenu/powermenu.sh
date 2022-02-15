@@ -19,16 +19,11 @@ logout=""
 
 # Confirmation
 confirm_exit() {
-	# Random colors
-	styles=($(ls -p --hide="colors.rasi" $dir/styles))
-	color="${styles[$(( $RANDOM % 8 ))]}"
-	sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
-
 	yes="Yes"
 	no="No"
 	options="$yes\n$no"
-    rofi_confirm="rofi -theme $dir/confirm_alt"
-	choice=$(echo -e "$options" | $rofi_confirm -dmenu -selected-row 0)
+  rofi_confirm="rofi -theme $dir/confirm_alt"
+	choice=$(echo -e "$options" | $rofi_confirm -p "$chosen" -dmenu -selected-row 0)
 	echo $choice
 }
 
@@ -43,7 +38,7 @@ case $chosen in
 			poweroff
 		else 
 			exit 0
-        fi
+    fi
         ;;
     $reboot)
 		ans=$(confirm_exit &)
@@ -51,7 +46,7 @@ case $chosen in
 			reboot
 		else
 			exit 0
-        fi
+    fi
         ;;
   #   $lock)
 		# if [[ -f /usr/bin/i3lock ]]; then
@@ -70,7 +65,7 @@ case $chosen in
 			systemctl suspend
         else
         	exit 0
-        fi
+    fi
         ;;
     $logout)
 		ans=$(confirm_exit &)
@@ -84,6 +79,6 @@ case $chosen in
 			fi
         else
         	exit 0
-        fi
+    fi
         ;;
 esac

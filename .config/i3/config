@@ -13,7 +13,7 @@ bindsym F9 restart
 bindsym $mod+Shift+c reload
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? ' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id $HOME/.config/rofi/powermenu/logout.sh
 
 #*************************************************************************************************************************
 #                                                    AESTHETICS
