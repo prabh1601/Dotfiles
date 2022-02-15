@@ -38,7 +38,7 @@ font pango:DejaVu Sans Mono 8
 default_border pixel 2
 default_floating_border pixel 2
 
-client.focused #C3B1E1 #C3B1E1 #C3B1E1 #FF6961 #C3B1E1
+client.focused #C3B1E1 #C3B1E1 #C3B1E1 #FF6961 #a8dadc
 
 
 #*************************************************************************************************************************
@@ -257,6 +257,8 @@ for_window [class="Nitrogen"] floating enable
 #Always launch feh in floating mode
 for_window [class="feh"] floating enable
 
+#Always launch gucharmap in floating mode 
+for_window [class="gucharmap"] floating enable
 
 #*************************************************************************************************************************
 #                                                    GAPS           
