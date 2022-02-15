@@ -1,0 +1,29 @@
+[module/date]
+
+type = internal/date
+interval = 1 
+
+date = %a, %d %b
+
+label = %{T7}%date%%{T-}
+label-foreground = ${colors.rose-pink}
+
+format = %{A1:dunstify "hello world":} %{A} <label>
+format-foreground = ${colors.dark-red}
+format-background = ${colors.bg-alt}
+format-padding = 1
+
+[module/time]
+type = internal/date
+interval = 1 
+
+time = %H : %M : %S
+
+label = %{T7}%time%%{T-}
+label-foreground = ${colors.rose-pink}
+
+format =   <label> 
+format-foreground = ${colors.dark-red}
+format-background = ${colors.bg-alt}
+format-padding = 1
+

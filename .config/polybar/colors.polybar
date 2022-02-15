@@ -1,0 +1,25 @@
+bg = #2E3440
+bg-alt = #3B4252
+fg = #ECEFF4
+fg-alt = #E6E9F0
+
+parrot = #d9ed92
+blue = #81A1C1
+cyan = #88C0D0
+light-blue = #90e0ef
+green = #A3BE8C
+orange = #D08770
+purple = #B48EAD
+light-purple = #c8b6ff
+red = #BF616A
+dark-red = #ef233c
+yellow = #EBCB8B
+cream = #FFD29D
+brownish-cream = #d4c7b0
+rose-pink = #f5cac3
+
+black = #000
+white = #FFF
+
+trans = #00000000
+semi-trans-black = #AA000000

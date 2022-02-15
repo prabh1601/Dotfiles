@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Terminate already running bar instances
+# Terminate already running instances of polybar 
 killall -q polybar
 
-# Launch Polybar, using default config location ~/.config/polybar/config
-polybar i3 2>&1 | tee -a /tmp/polybar.log & disown
-
+#Launch Polybar,with our config files
+polybar main -c /home/prabh/.config/polybar/config.polybar 2>&1 | tee -a /tmp/polybar.log & disown
