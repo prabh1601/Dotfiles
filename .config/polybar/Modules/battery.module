@@ -1,5 +1,4 @@
 [module/battery]
-poll-interval = 1
 type = internal/battery
 battery = BAT0
 adapter = AC

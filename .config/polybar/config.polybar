@@ -6,6 +6,8 @@ include-file = /home/prabh/.config/polybar/Modules/powermenu.module
 include-file = /home/prabh/.config/polybar/Modules/network.module
 include-file = /home/prabh/.config/polybar/Modules/battery.module
 include-file = /home/prabh/.config/polybar/Modules/date-time.module
+include-file = /home/prabh/.config/polybar/Modules/i3-workspace.module
+include-file = /home/prabh/.config/polybar/Modules/volume.module
 
 [margin/wm]
 margin-top = 5
@@ -27,6 +29,6 @@ border-size = 5
 include-file = /home/prabh/.config/polybar/fonts.polybar 
 
 modules-left = time date
-modules-center =  
-modules-right = wireless battery powermenu
+modules-center = i3-workspace
+modules-right =  wireless pulseaudio battery powermenu
 
