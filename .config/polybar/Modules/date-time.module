@@ -4,12 +4,12 @@ type = internal/date
 interval = 1 
 
 date = %a, %d %b
-
-label = %{T7}%date%%{T-}
-label-foreground = ${colors.light-blue}
+label = %date%
+label-font = 6
+label-foreground = ${colors.rose-pink}
 
 format = %{A1:dunstify "Hello World" "This is a Test Notification":} %{A} <label>
-format-foreground = ${colors.light-purple}
+format-foreground = ${colors.light-blue}
 format-background = ${colors.bg-alt}
 format-padding = 1
 
@@ -18,12 +18,12 @@ type = internal/date
 interval = 1 
 
 time = %H : %M : %S
-
-label = %{T7}%time%%{T-}
-label-foreground = ${colors.light-blue}
+label = %time%
+label-font = 6
+label-foreground = ${colors.rose-pink}
 
 format =   <label> 
-format-foreground = ${colors.light-purple}
+format-foreground = ${colors.light-blue}
 format-background = ${colors.bg-alt}
 format-padding = 1
 

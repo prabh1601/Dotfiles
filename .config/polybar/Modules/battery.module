@@ -9,7 +9,7 @@ format-full-background = ${colors.yellow}
 format-full-foreground = ${colors.black}
 format-full-padding = 1
 
-format-charging = %{T3}  %{T-}<label-charging>
+format-charging = %{T10}H %{T-}<label-charging>
 format-charging-background = ${colors.green}
 format-charging-foreground = ${colors.black}
 format-charging-padding = 1
