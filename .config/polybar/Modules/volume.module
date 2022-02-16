@@ -18,8 +18,8 @@ ramp-volume-2-foreground = ${colors.green}
 ramp-volume-3-foreground = ${colors.green}
 ramp-volume-4-foreground = ${colors.orange}
 
-label-muted = 婢 mute
-label-muted-foreground = ${colors.red}
+label-muted = %{T7}婢 %{T-}%{F#000}Muted%{F-}
+label-muted-foreground = ${colors.dark-red}
 label-muted-background = ${colors.bg-alt}
 label-muted-padding = 1
 
