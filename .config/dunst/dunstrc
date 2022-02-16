@@ -82,7 +82,7 @@
 
     ### Text ###
 
-    font = Museo Sans 10
+    font = Roboto 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -244,7 +244,7 @@
 
 [urgency_normal]
     background = "#121212"
-    foreground = "#ffd5cd"
+    foreground = "#f8edeb"
     frame_color = "#d9ed92"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
