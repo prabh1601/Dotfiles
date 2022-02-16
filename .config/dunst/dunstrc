@@ -162,7 +162,8 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/candy-icons/apps/scalable:/usr/share/icons/candy-icons/devices/scalable/
+    icon_path = /usr/share/icons/candy-icons/apps/scalable:/usr/share/icons/candy-icons/devices/scalable/:/usr/share/icons/candy-icons/preferences/scalable
+    # icon_path = /usr/share/icons/candy-icons
 
     ### History ###
 
@@ -249,6 +250,7 @@
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = ~/.config/dunst/images/notification.png
+    icon = /usr/share/icons/candy-icons/preferences/scalable/bell.svg
 
 [urgency_critical]
     background = "#121212"
