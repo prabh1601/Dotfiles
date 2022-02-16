@@ -8,8 +8,8 @@ include-file = /home/prabh/.config/polybar/Modules/battery.module
 include-file = /home/prabh/.config/polybar/Modules/date-time.module
 include-file = /home/prabh/.config/polybar/Modules/i3-workspace.module
 include-file = /home/prabh/.config/polybar/Modules/volume.module
-include-file = /home/prabh/.config/polybar/Modules/rounded-corner.module
 include-file = /home/prabh/.config/polybar/Modules/separator.module
+include-file = /home/prabh/.config/polybar/Modules/blank_space.module
 
 [bar/main]
 background = ${colors.bg}
@@ -24,7 +24,6 @@ cursor-click = pointer
 include-file = /home/prabh/.config/polybar/fonts.polybar 
 
 tray-position = left
-tray-underline = ${colors.black}
 
 ;separator = ":"
 ;separator-foreground = 
@@ -32,7 +31,7 @@ tray-underline = ${colors.black}
 
 modules-left = date time
 modules-center = i3-workspace
-modules-right =  wired wireless pulseaudio separator battery separator powermenu
+modules-right =  wired wireless pulseaudio blank_space battery blank_space powermenu
 
 [settings]
 screenchange-reload = true

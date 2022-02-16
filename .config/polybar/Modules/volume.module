@@ -6,17 +6,20 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-background = ${colors.bg-alt}
 format-volume-padding = 1
 
+label-volume = %percentage%% 
+label-volume-foreground = ${colors.brownish-cream}
+
 ramp-volume-0 = %{T7} %{T-}
 ramp-volume-1 = %{T7}奔 %{T-}
 ramp-volume-2 = %{T7}墳 %{T-}
 ramp-volume-3 = %{T7} %{T-}
 ramp-volume-4 = %{T7} %{T-}
 
-ramp-volume-0-foreground = ${colors.white}
-ramp-volume-1-foreground = ${colors.cream}
+ramp-volume-0-foreground = ${colors.cream}
+ramp-volume-1-foreground = ${colors.green}
 ramp-volume-2-foreground = ${colors.green}
 ramp-volume-3-foreground = ${colors.green}
-ramp-volume-4-foreground = ${colors.orange}
+ramp-volume-4-foreground = ${colors.red}
 
 label-muted = %{T7}婢 %{T-}%{F#000}Muted%{F-}
 label-muted-foreground = ${colors.dark-red}

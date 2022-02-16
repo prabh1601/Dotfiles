@@ -1,3 +1,0 @@
-[module/corners]
-type = custom/text
-content = %{T3}%{}

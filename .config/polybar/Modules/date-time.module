@@ -5,7 +5,7 @@ interval = 1
 
 date = %a, %d %b
 label = %date%
-label-font = 6
+label-font = 7
 label-foreground = ${colors.light-blue}
 
 format = %{A1:dunstify "Hello World" "This is a Test Notification":} %{A} <label>
@@ -17,9 +17,9 @@ format-padding = 1
 type = internal/date
 interval = 1 
 
-time = %H : %M : %S
+time = %I : %M : %S %p
 label = %time%
-label-font = 6
+label-font = 7
 label-foreground = ${colors.light-blue}
 
 format =   <label> 
