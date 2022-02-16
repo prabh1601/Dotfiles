@@ -36,5 +36,5 @@ separator = " "
 
 modules-left = time date
 modules-center = i3-workspace
-modules-right =  wireless pulseaudio battery powermenu
+modules-right =  wired wireless pulseaudio battery powermenu
 
