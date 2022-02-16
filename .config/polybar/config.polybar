@@ -2,10 +2,10 @@
 include-file = /home/prabh/.config/polybar/colors.polybar
 
 [modules]
+include-file = /home/prabh/.config/polybar/Modules/date-time.module
+include-file = /home/prabh/.config/polybar/Modules/battery.module
 include-file = /home/prabh/.config/polybar/Modules/powermenu.module
 include-file = /home/prabh/.config/polybar/Modules/network.module
-include-file = /home/prabh/.config/polybar/Modules/battery.module
-include-file = /home/prabh/.config/polybar/Modules/date-time.module
 include-file = /home/prabh/.config/polybar/Modules/i3-workspace.module
 include-file = /home/prabh/.config/polybar/Modules/volume.module
 include-file = /home/prabh/.config/polybar/Modules/separator.module
@@ -13,7 +13,6 @@ include-file = /home/prabh/.config/polybar/Modules/blank_space.module
 
 [bar/main]
 background = ${colors.bg}
-;foreground = ${colors.fg}
 width = 100%
 height = 30
 fixed-center = true
@@ -24,10 +23,6 @@ cursor-click = pointer
 include-file = /home/prabh/.config/polybar/fonts.polybar 
 
 tray-position = left
-
-;separator = ":"
-;separator-foreground = 
-;separator-background = 
 
 modules-left = date time
 modules-center = i3-workspace
