@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 theme="full_alt"
-dir="/home/prabh/.config/rofi/powermenu/"
+dir="$HOME/.config/rofi/powermenu/"
 rofi_command="rofi -theme $dir/$theme"
 uptime=$(uptime -p | sed -e 's/up //g')
 
@@ -42,24 +42,15 @@ case $chosen in
         ;;
     $reboot)
 		ans=$(confirm_exit &)
-		if [[ $ans = "Yes" ]]; then
+		if [[ $ans == "Yes" ]]; then
 			reboot
 		else
 			exit 0
     fi
         ;;
-  #   $lock)
-		# if [[ -f /usr/bin/i3lock ]]; then
-		# 	i3lock
-		# elif [[ -f /usr/bin/betterlockscreen ]]; then
-		# 	betterlockscreen -l
-		# else 
-		# 	echo "Nothing found"
-		# fi
-  #       ;;
     $suspend)
 		ans=$(confirm_exit &)
-		if [[ $ans = "Yes" ]]; then
+		if [[ $ans == "Yes" ]]; then
 			# mpc -q pause
 			# amixer set Master mute
 			systemctl suspend
@@ -69,7 +60,7 @@ case $chosen in
         ;;
     $logout)
 		ans=$(confirm_exit &)
-		if [[ $ans = "Yes" ]]; then
+		if [[ $ans == "Yes" ]]; then
 			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
