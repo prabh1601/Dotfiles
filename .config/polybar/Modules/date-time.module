@@ -6,7 +6,7 @@ interval = 1
 date = %a, %d %b
 label = %date%
 label-font = 7
-label-foreground = ${colors.light-blue}
+label-foreground = ${colors.new}
 
 format = %{A1:dunstify "Hello World" "This is a Test Notification":} %{A} <label>
 format-foreground = ${colors.light-purple}
@@ -19,8 +19,8 @@ interval = 1
 
 time = %I : %M : %S %p
 label = %time%
-label-font = 7
-label-foreground = ${colors.light-blue}
+label-font = 10
+label-foreground = ${colors.white}
 
 format =   <label> 
 format-foreground = ${colors.light-purple}

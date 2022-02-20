@@ -1,0 +1,9 @@
+[module/tray]
+type = custom/script
+exec = echo "惘"
+format = <label>
+format-font = 7
+format-foreground = ${colors.rose-pink}
+format-background = ${colors.bg-alt}
+format-padding = 1
+click-left = exec ~/.scripts/traycollapse

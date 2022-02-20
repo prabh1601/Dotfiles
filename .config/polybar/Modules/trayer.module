@@ -1,0 +1,3 @@
+[module/trayer]
+type = custom/script
+exec = trayer 

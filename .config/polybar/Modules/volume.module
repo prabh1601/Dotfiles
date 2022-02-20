@@ -2,43 +2,23 @@
 type = internal/pulseaudio
 interval = 5
 
-format-volume = <ramp-volume> <label-volume> 
+format-volume = 墳 <label-volume> 
 format-volume-background = ${colors.bg-alt}
+format-volume-foreground = ${colors.green}
 format-volume-padding = 1
+format-volume-font = 7
 
 label-volume = %percentage%% 
-label-volume-foreground = ${colors.brownish-cream}
+label-volume-foreground = ${colors.white}
+label-volume-font = 1
 
-ramp-volume-0 = %{T7} %{T-}
-ramp-volume-1 = %{T7}奔 %{T-}
-ramp-volume-2 = %{T7}墳 %{T-}
-ramp-volume-3 = %{T7} %{T-}
-ramp-volume-4 = %{T7} %{T-}
+format-muted = 婢 <label-muted> 
+format-muted-background = ${colors.bg-alt}
+format-muted-foreground = ${colors.dark-red}
+format-muted-padding = 1
+format-muted-font = 7
 
-ramp-volume-0-foreground = ${colors.cream}
-ramp-volume-1-foreground = ${colors.green}
-ramp-volume-2-foreground = ${colors.green}
-ramp-volume-3-foreground = ${colors.green}
-ramp-volume-4-foreground = ${colors.red}
+label-muted = Muted   
+label-muted-font = 1
+label-muted-foreground = ${colors.black}
 
-label-muted = %{T7}婢 %{T-}%{F#000}Muted%{F-}
-label-muted-foreground = ${colors.dark-red}
-label-muted-background = ${colors.bg-alt}
-label-muted-padding = 1
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.fg-alt}
