@@ -2,17 +2,23 @@
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
 
 label-mode-padding = 1
 label-mode-foreground = ${colors.bg-alt}
 label-mode-background = ${colors.rose-pink}
 
 ; focused = Active workspace on focused monitor
-label-focused = %{T7}%name%%{T-}
+label-focused = %name%
+label-focused-font = 7
 label-focused-foreground = ${colors.rose-pink}
 label-focused-padding = 1
 
@@ -20,17 +26,11 @@ label-focused-padding = 1
 label-unfocused = %index%
 label-unfocused-padding = 1
 
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-;label-visible-background = ${self.label-focused-background}
-;label-visible-underline = ${self.label-focused-underline}
-;label-visible-padding = ${self.label-focused-padding}
-
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
 label-urgent-background = ${colors.red}
+label-urgent-foreground = ${colors.black}
+label-urgent-font = 7
 label-urgent-padding = 1
 
-; Separator in between workspaces
 label-separator = |
-;label-separator-foreground = ${colors.white}
