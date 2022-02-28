@@ -1,5 +1,5 @@
 configuration {
-	font:							"Roboto 14";
+	font:							"Inconsolata Nerd Font 17";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     drun-display-format:            "{name}";
@@ -27,7 +27,7 @@ prompt {
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"PowerMenu  |";
+	str: 							"Goodbye |";
 	background-color: 				@background-alt;
 	text-color: 					@foreground;
     padding:                        1% 0.5% 1% 0.5%;

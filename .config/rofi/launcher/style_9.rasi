@@ -1,7 +1,7 @@
 configuration {
-	font:							"Iosevka Nerd Font 13";
+	font:							"DejaVu 12";
     show-icons:                     true;
-	icon-theme: 					"Tela";
+	icon-theme: 					"Papirus";
     display-drun: 					"Applications";
     drun-display-format:            "{name}";
     disable-history:                false;
@@ -29,7 +29,7 @@ prompt {
 	background-color: 				@ac;
 	text-color: 					@fg;
     border-radius:                  10px;
-	font:							"Iosevka Nerd Font 12";
+	font:							"Roboto 14";
 }
 
 textbox-prompt-colon {
