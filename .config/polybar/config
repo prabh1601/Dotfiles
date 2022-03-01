@@ -10,8 +10,8 @@ include-file = $HOME/.config/polybar/Modules/i3-workspace.module
 include-file = $HOME/.config/polybar/Modules/volume.module
 include-file = $HOME/.config/polybar/Modules/separator.module
 include-file = $HOME/.config/polybar/Modules/blank_space.module
-include-file = $HOME/.config/polybar/Modules/traycollapse.module
 include-file = $HOME/.config/polybar/Modules/timetable.module
+include-file = $HOME/.config/polybar/Modules/xwindow.module
 
 [bar/main]
 background = ${colors.bg}
@@ -24,7 +24,7 @@ line-size = 2
 cursor-click = pointer
 include-file = $HOME/.config/polybar/fonts.polybar 
 
-modules-left = i3-workspace blank_space timetable
+modules-left = i3-workspace blank_space xwindow blank_space timetable
 modules-center = date separator time 
 modules-right = blank_space wired wireless pulseaudio blank_space battery blank_space powermenu
 
