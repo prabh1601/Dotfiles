@@ -24,7 +24,7 @@ format-connected-foreground = ${colors.green}
 format-connected-background = ${colors.bg-alt}
 format-connected-padding = 1
 label-connected =  %{T5} %downspeed%  %upspeed%%{T-}
-label-connected-foreground = ${colors.white}
+label-connected-foreground = ${colors.brownish-cream}
 
 format-disconnected = %{A1:nm-connection-editor:}睊 %{A-}<label-disconnected>
 format-disconnected-foreground = ${colors.dark-red}
