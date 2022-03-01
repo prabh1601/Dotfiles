@@ -41,4 +41,4 @@ i3lock --nofork                 	\
     --wrong-text="Oops! Wrong Password"		\
     --wrong-color=fe6d73 \
     \
-    --image=$HOME/Pictures/Wallpaper/lock-wallpaper-edit.png
+    --image=$HOME/Pictures/Wallpaper/lock-wallpaper-edit.png 
