@@ -1,8 +1,6 @@
 [module/timetable]
 type = custom/text
-content = "﨟"
+content = "﨟 "
 content-font = 7
-content-foreground = ${colors.rose-pink}
-content-background = ${colors.bg}
-content-padding = 1
+content-foreground = ${colors.white}
 click-left = feh ~/Downloads/timetable.jpg &
