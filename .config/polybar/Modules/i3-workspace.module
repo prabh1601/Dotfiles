@@ -1,6 +1,6 @@
 [module/i3-workspace]
 type = internal/i3
-format = <label-state> <label-mode>
+format = <label-mode> <label-state>
 index-sort = true
 
 ; Only show workspaces on the same output as the bar
