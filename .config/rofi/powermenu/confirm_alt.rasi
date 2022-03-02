@@ -1,5 +1,5 @@
 configuration {
-    font:                           "Roboto 24";
+    font:                           "Inconsolata Nerd Font 24";
     show-icons:                     false;
     icon-theme:                     "Papirus";
     drun-display-format:            "{name}";
@@ -20,17 +20,17 @@ window {
 
 prompt {
     enabled:                        true;
-    padding:                        1% 0.5% 0.5% 0.5%;
+    padding:                        0.5% 0.5% 0.5% 0.5%;
     background-color:               @background-alt;
     text-color:                     @foreground;
 }
 
 textbox-prompt-colon {
     expand:                         false;
-    str:                            "| Sure ?";
+    str:                            " Sure?";
     background-color:               @background-alt;
     text-color:                     @foreground;
-    padding:                        0.3% 0.3% 0.0% 0.0%;
+    padding:                        0.4% 0.3% 0.0% 0.0%;
 }
 
 inputbar {
