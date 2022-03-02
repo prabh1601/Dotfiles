@@ -53,7 +53,7 @@ case $chosen in
 		if [[ $ans == "Yes" ]]; then
 			# mpc -q pause
 			# amixer set Master mute
-			systemctl suspend
+			$HOME/.scripts/lock.sh
         else
         	exit 0
     fi

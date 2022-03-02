@@ -1,5 +1,5 @@
 configuration {
-	font:							"DejaVu 12";
+	font:							"SF Pro 12";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"Applications";
@@ -29,7 +29,7 @@ prompt {
 	background-color: 				@ac;
 	text-color: 					@fg;
     border-radius:                  10px;
-	font:							"Roboto 14";
+	font:							"Roboto 15";
 }
 
 textbox-prompt-colon {
