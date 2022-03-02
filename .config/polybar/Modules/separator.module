@@ -1,6 +1,0 @@
-[module/separator]
-type = custom/text
-content = "|"
-content-background = ${colors.bg-alt}
-content-foreground = ${colors.black}
-content-font = 7

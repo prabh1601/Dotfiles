@@ -10,7 +10,7 @@ format-volume-font = 7
 
 label-volume = %percentage%% 
 label-volume-foreground = ${colors.brownish-cream}
-label-volume-font = 1
+label-volume-font = 15
 
 format-muted = 婢 <label-muted> 
 format-muted-background = ${colors.bg-alt}
@@ -19,6 +19,6 @@ format-muted-padding = 1
 format-muted-font = 7
 
 label-muted = Muted   
-label-muted-font = 1
+label-muted-font = 15
 label-muted-foreground = ${colors.black}
 

@@ -1,0 +1,47 @@
+[module/temperature]
+type = internal/temperature
+interval = 0.5
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input
+warn-temperature = 70 
+
+label = %temperature%
+label-font = 14
+format =  <label>
+format-background = ${colors.rose-pink}
+format-foreground = ${colors.black}
+format-padding = 1
+format-underline = ${colors.bg}
+format-overline = ${colors.bg}
+
+format-warn =  <label-warn>
+label-warn-font = 14
+format-warn-foreground = ${colors.dark-red}
+format-warn-background = ${colors.rose-pink}
+format-warn-underline = ${colors.bg}
+format-warn-overline = ${colors.bg}
+format-warn-padding = 1
+ 
+[module/memory]
+type = internal/memory
+interval = 1
+label =  %gb_used%
+label-font = 14
+format =  <label>
+format-background = ${colors.rose-pink}
+format-foreground = ${colors.black}
+format-underline = ${colors.bg}
+format-overline = ${colors.bg}
+format-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+label = %percentage%%
+format = CPU <label>
+format-font = 14
+format-background = ${colors.rose-pink}
+format-foreground = ${colors.black}
+format-padding = 1
+format-underline = ${colors.bg}
+format-overline = ${colors.bg}

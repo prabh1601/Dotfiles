@@ -8,10 +8,11 @@ include-file = $HOME/.config/polybar/Modules/powermenu.module
 include-file = $HOME/.config/polybar/Modules/network.module
 include-file = $HOME/.config/polybar/Modules/i3-workspace.module
 include-file = $HOME/.config/polybar/Modules/volume.module
-include-file = $HOME/.config/polybar/Modules/separator.module
-include-file = $HOME/.config/polybar/Modules/blank_space.module
+include-file = $HOME/.config/polybar/Modules/separation.module
 include-file = $HOME/.config/polybar/Modules/timetable.module
 include-file = $HOME/.config/polybar/Modules/xwindow.module
+include-file = $HOME/.config/polybar/Modules/machine-stats.module
+include-file = $HOME/.config/polybar/Modules/tray.module
 
 [bar/main]
 background = ${colors.bg}
@@ -19,14 +20,15 @@ width = 100%
 height = 30
 fixed-center = true
 ;radius= 5 
+;tray-position = left
 border-size = 2
 line-size = 2
 cursor-click = pointer
 include-file = $HOME/.config/polybar/fonts.polybar 
-
-modules-left = i3-workspace blank_space xwindow blank_space timetable
+;cpu separator-pink memory separator-pink temperature blank_space
+modules-left = i3-workspace blank_space xwindow blank_space  timetable 
 modules-center = date separator time 
-modules-right = blank_space wired wireless pulseaudio blank_space battery blank_space powermenu
+modules-right = wired wireless separator pulseaudio blank_space battery blank_space powermenu
 
 [settings]
 screenchange-reload = true

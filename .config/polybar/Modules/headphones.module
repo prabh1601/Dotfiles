@@ -1,7 +1,0 @@
-[module/headphones]
-type = custom/script
-exec = $HOME/.scripts/check_headphones.sh 
-interval = 5
-format-background = ${colors.bg-alt}
-format-foreground = ${colors.red}
-format-font = 7

@@ -1,3 +1,0 @@
-[module/blank_space]
-type = custom/text
-content = " "
