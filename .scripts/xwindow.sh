@@ -9,8 +9,8 @@ elif [ $WM_DESKTOP != "1883" ]; then
 
 	if [ "$WM_CLASS" == 'Enter WM_CLASS value here' ]; then
 		echo "Custom Name"
-	elif [ "$WM_NAME" == 'Enter WM_NAME value here' ]; then
-		echo "Custom Name"
+	elif [[ "$WM_NAME" == "WhatsApp" || "$WM_NAME" == "Google Chrome" ]]; then
+		echo " $WM_NAME "
 	else 
 		echo "$WM_CLASS"
 	fi
