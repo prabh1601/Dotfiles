@@ -1,4 +1,9 @@
 [module/tray]
-type = custom/text
-content = "             "
-content-background = ${colors.bg-alt}
+type=custom/script
+exec = stalonetray &
+tail = true
+format-background = ${colors.rose-pink}
+format-foreground = ${colors.black}
+format-underline = ${colors.bg}
+format-overline = ${colors.bg}
+format-font = 17

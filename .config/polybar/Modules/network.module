@@ -3,11 +3,13 @@ type = internal/network
 interface = enp7s0
 interval = 0.5
 
-format-connected = %{T7}%{A1:nm-connection-editor:} %{A-T-} <label-connected>
+format-connected = %{A1:nm-connection-editor:} %{A} <label-connected>
+format-connected-font = 7
 format-connected-foreground = ${colors.green}
 format-connected-background = ${colors.bg-alt}
 format-connected-padding = 1
-label-connected =  %{T5} %downspeed%  %upspeed%%{T-}
+label-connected =  %downspeed%     %upspeed%
+label-connected-font = 15
 label-connected-foreground = ${colors.brownish-cream}
 
 format-disconnected = <label-disconnected>
@@ -19,15 +21,15 @@ type = internal/network
 interface = wlp0s20f3
 interval = 0.5
 
-format-connected = %{A1:nm-connection-editor:} %{A-} <label-connected>
+format-connected = %{A1:nm-connection-editor:} %{A} <label-connected>
 format-connected-foreground = ${colors.green}
 format-connected-background = ${colors.bg-alt}
 format-connected-padding = 1
-label-connected =   %downspeed%     %upspeed%
+label-connected =  %downspeed%     %upspeed%
 label-connected-font = 15
 label-connected-foreground = ${colors.brownish-cream}
 
-format-disconnected = %{A1:nm-connection-editor:}睊 %{A-}<label-disconnected>
+format-disconnected = %{A1:nm-connection-editor:}睊 %{A}<label-disconnected>
 format-disconnected-foreground = ${colors.dark-red}
 format-disconnected-background = ${colors.bg-alt}
 format-disconnected-padding = 1

@@ -9,11 +9,3 @@ content-font = 7
 type = custom/text
 content = " "
 
-[module/separator-pink]
-type = custom/text
-content = "|"
-content-background = ${colors.rose-pink}
-content-foreground = ${colors.black}
-content-font = 7
-content-overline = ${colors.bg}
-content-underline = ${colors.bg}

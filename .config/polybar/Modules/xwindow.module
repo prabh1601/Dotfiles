@@ -1,9 +1,9 @@
 [module/xwindow]
 type = custom/script
 interval = 0
-exec = ~/.scripts/xwindow.sh
+exec = ~/.scripts/xwindow.sh 
 format-background = ${colors.rose-pink}
 format-foreground = ${colors.black}
 format-underline = ${colors.bg}
 format-overline = ${colors.bg}
-format-font = 13
+format-font = 17
