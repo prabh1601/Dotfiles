@@ -60,7 +60,7 @@
 
     ### Text ###
 
-    font = Roboto 11
+    font = SF Pro Text 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -137,7 +137,7 @@
     icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    # max_icon_size = 32
 
     # Paths to default icons.
     icon_path = /usr/share/icons/candy-icons/apps/scalable:/usr/share/icons/candy-icons/devices/scalable/:/usr/share/icons/candy-icons/preferences/scalable
@@ -224,7 +224,7 @@
 [urgency_normal]
     background = "#121212"
     foreground = "#f8edeb"
-    frame_color = "#d9ed92"
+    frame_color = "#f8edeb"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = ~/.config/dunst/images/notification.png
