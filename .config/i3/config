@@ -137,6 +137,8 @@ bindsym $mod+Control+0 move container to workspace number $ws10; workspace numbe
 #assigning specific workspace to apps
 assign [class="discord"] $ws10
 
+assign [class="Virt-manager"] $ws9
+
 #*************************************************************************************************************************
 #                                                    MEDIA-KEYBINDS           
 #*************************************************************************************************************************
@@ -247,14 +249,11 @@ bindsym Control+Delete exec --no-startup-id "flameshot gui"
 # Start flameshot (full screen)
 bindsym Print exec --no-startup-id "flameshot screen"
 
-#Always launch nitrogen in floating mode 
+# Lauching applications in floating mode
 for_window [class="Nitrogen"] floating enable
-
-#Always launch feh in floating mode
 for_window [class="feh"] floating enable
-
-#Always launch gucharmap in floating mode 
-for_window [class="gucharmap"] floating enable
+for_window [class="Gucharmap"] floating enable
+for_window [class="flameshot"] floating enable
 
 #*************************************************************************************************************************
 #                                                    GAPS           
