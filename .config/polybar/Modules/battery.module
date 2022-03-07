@@ -8,6 +8,8 @@ format-full = %{T3}  %{T-}<label-full>
 label-full-font = 14
 format-full-background = ${colors.yellow}
 format-full-foreground = ${colors.black}
+format-full-underline = ${colors.bg}
+format-full-overline = ${colors.bg}
 format-full-padding = 1
 
 format-charging = %{T10}H %{T-}<label-charging>

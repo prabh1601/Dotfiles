@@ -1,6 +1,6 @@
 [module/wired]
 type = internal/network
-interface = enp7s0
+interface-type = wired
 interval = 0.5
 
 format-connected = %{A1:nm-connection-editor:} %{A} <label-connected>
@@ -14,18 +14,18 @@ label-connected-foreground = ${colors.brownish-cream}
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.bg-alt}
-label-disconnected = %{T1}%{T-}
+label-disconnected = 
 
 [module/wireless]
 type = internal/network
-interface = wlp0s20f3
+interface-type = wireless
 interval = 0.5
 
 format-connected = %{A1:nm-connection-editor:} %{A} <label-connected>
 format-connected-foreground = ${colors.green}
 format-connected-background = ${colors.bg-alt}
 format-connected-padding = 1
-label-connected =  %downspeed%     %upspeed%
+label-connected = (%essid%)    %downspeed%     %upspeed%
 label-connected-font = 15
 label-connected-foreground = ${colors.brownish-cream}
 

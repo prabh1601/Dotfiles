@@ -1,0 +1,18 @@
+[module/vpn]
+type=custom/script
+exec=/home/prabh/.scripts/vpn.sh
+interval=0
+
+label = %output%
+label-fail = %output%
+label-fail-foreground = ${colors.black}
+label-font = 15
+label-foreground = ${colors.brownish-cream}
+
+format= 嬨  <label>
+format-font = 7
+format-background = ${colors.bg-alt}
+format-foreground = ${colors.green}
+format-padding = 1 
+
+click-left=/home/prabh/.scripts/toggle_vpn.sh
