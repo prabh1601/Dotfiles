@@ -17,13 +17,13 @@
     # will be ignored.
     follow = mouse
 
-    width = (0,400)
-    height = 300
+    width = (300,500)
+    height = 500
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
 
-    shrink = yes
+    #shrink = yes
 
     transparency = 0
 
@@ -100,7 +100,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = "<b>%s</b>\n\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
