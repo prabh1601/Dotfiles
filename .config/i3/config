@@ -15,7 +15,7 @@ bindsym $mod+Shift+c reload
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec --no-startup-id $HOME/.config/rofi/powermenu/logout.sh
 
-#*************************************************************************************************************************
+#*****************
 #                                                    AESTHETICS
 #*************************************************************************************************************************
 
@@ -134,10 +134,17 @@ bindsym $mod+Control+8 move container to workspace number $ws8; workspace number
 bindsym $mod+Control+9 move container to workspace number $ws9; workspace number $ws9
 bindsym $mod+Control+0 move container to workspace number $ws10; workspace number $ws10
 
-#assigning specific workspace to apps
-assign [class="discord"] $ws10
+#optimization options 
+workspace_auto_back_and_forth yes
+bindsym $mod+u [urgent=latest] focus
+for_window [class=.*] focus 
+focus_on_window_activation focus
 
-assign [class="Virt-manager"] $ws9
+
+#assigning specific workspace to apps
+assign [class="discord"] $ws9
+assign [class="whatsapp-nativefier-d40211"] $ws9
+assign [class="Virt-manager"] $ws10
 
 #*************************************************************************************************************************
 #                                                    MEDIA-KEYBINDS           
