@@ -1,0 +1,31 @@
+;glyphs
+font-0 = "JetBrainsMono Nerd Font Mono:style=Bold:size=16;4"
+font-1 = "JetBrainsMono Nerd Font Mono:style=Bold:size=18;5"
+font-2 = "JetBrainsMono Nerd Font Mono:style=Bold:size=20;5"
+font-3 = "JetBrainsMono Nerd Font Mono:style=Bold:size=22;5"
+font-4 = "JetBrainsMono Nerd Font Mono:style=Bold:size=24;5"
+font-5 = "empty"
+
+;left 
+font-6 = "SF Pro Text:style=Bold:size=9;2"
+font-7 = "SF Pro Text:style=Semibold:size=11;2"
+font-8 = "Inconsolata Nerd Font:style=Bold:size=9;1.5"
+font-9 = "FantasqueSansMono Nerd Font:style=Bold:size=13;3"
+font-10 = "empty"
+font-11 = "empty"
+
+;center
+font-13 = "empty"
+font-14 = "empty"
+font-15 = "empty"
+font-16 = "empty"
+font-17 = "empty"
+font-18 = "empty"
+
+;right 
+font-19 = "empty"
+font-20 = "empty"
+font-21 = "empty"
+font-22 = "empty"
+font-23 = "empty"
+font-24 = "empty"

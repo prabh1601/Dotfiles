@@ -1,0 +1,6 @@
+[module/headphone]
+type = custom/script
+exec = /home/prabh/.scripts/check_headphones.sh
+interval = 0
+format-background = ${colors.bg-alt}
+format-font = 8
