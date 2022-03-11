@@ -1,7 +1,7 @@
 [module/timetable]
 type = custom/text
-content = " 﨟 "
-content-font = 7
+content = " 﨟" 
+content-font = 8
 content-foreground = ${colors.brownish-cream}
 content-background = ${colors.bg-alt}
 click-left = feh ~/Downloads/timetable.jpg &
