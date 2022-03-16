@@ -4,7 +4,8 @@ battery = BAT0
 adapter = AC
 full-at = 100
 
-format-full = %{T3}  %{T-}<label-full>
+format-full =   <label-full>
+format-full-font = 3
 label-full-font = 14
 format-full-background = ${colors.yellow}
 format-full-foreground = ${colors.black}

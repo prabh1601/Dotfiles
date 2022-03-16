@@ -1,0 +1,14 @@
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+
+format =   <label> 
+format-background = ${colors.bg-alt}
+format-foreground = ${colors.green}
+format-padding = 1
+format-font = 7
+
+label = %percentage%% 
+label-foreground = ${colors.brownish-cream}
+label-font = 15
+
