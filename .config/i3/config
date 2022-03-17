@@ -23,7 +23,7 @@ bindsym $mod+Shift+e exec --no-startup-id $HOME/.config/rofi/powermenu/logout.sh
 #      FONTS      #
 ###################
 
-# font pango:monospace 8
+#font pango:monospace 8
 font pango:DejaVu Sans Mono 8
 
 #######################
