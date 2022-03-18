@@ -261,6 +261,7 @@ for_window [class="Nitrogen"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Gucharmap"] floating enable
 for_window [class="flameshot"] floating enable
+for_window [title="win0"] floating enable
 
 #*************************************************************************************************************************
 #                                                    GAPS           
