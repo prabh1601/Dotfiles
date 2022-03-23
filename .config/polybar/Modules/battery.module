@@ -3,9 +3,9 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 full-at = 100
+low-at = 20
 
-format-full =   <label-full>
-format-full-font = 3
+format-full = %{T18}%{T-} <label-full>
 label-full-font = 14
 format-full-background = ${colors.yellow}
 format-full-foreground = ${colors.black}
@@ -13,25 +13,22 @@ format-full-underline = ${colors.bg}
 format-full-overline = ${colors.bg}
 format-full-padding = 1
 
-format-charging = %{T10}H %{T-}<label-charging>
 label-charging-font = 14
+format-charging = H  <label-charging>
+format-charging-font = 10
 format-charging-background = ${colors.green}
 format-charging-foreground = ${colors.black}
 format-charging-padding = 1
 
 label-discharging-font = 14
 label-discharging-foreground = ${colors.cream}
-format-discharging = <ramp-capacity><label-discharging>  
+format-discharging = %{T18}%{T-} <label-discharging>  
 format-discharging-background = ${colors.bg-alt}
+format-discharging-foreground = ${colors.green}
 format-discharging-padding = 1
 
-ramp-capacity-0 = %{T13}LOW %{T-} 
-ramp-capacity-0-foreground = ${colors.dark-red}
-ramp-capacity-1 = %{T3}  %{T-} 
-ramp-capacity-1-foreground = ${colors.orange}
-ramp-capacity-2 = %{T3}  %{T-} 
-ramp-capacity-2-foreground = ${colors.green}
-ramp-capacity-3 = %{T3}  %{T-} 
-ramp-capacity-3-foreground = ${colors.green}
-ramp-capacity-4 = %{T3}  %{T-} 
-ramp-capacity-4-foreground = ${colors.green}
+label-low-font = 14
+format-low = %{T18}%{T-} <label-low>  
+format-low-background = ${colors.red}
+format-low-foreground = ${colors.black}
+format-low-padding = 1
