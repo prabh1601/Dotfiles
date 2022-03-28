@@ -14,7 +14,7 @@ format-full-overline = ${colors.bg}
 format-full-padding = 1
 
 label-charging-font = 14
-format-charging = H  <label-charging>
+format-charging = H <label-charging>
 format-charging-font = 10
 format-charging-background = ${colors.green}
 format-charging-foreground = ${colors.black}

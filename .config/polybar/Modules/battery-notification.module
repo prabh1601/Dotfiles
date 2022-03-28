@@ -1,0 +1,4 @@
+[module/bat-not]
+type = custom/script
+interval = 0
+exec = ~/.scripts/battery-notification.sh 
