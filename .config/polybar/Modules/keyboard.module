@@ -13,13 +13,13 @@ format-foreground = ${colors.green}
 format-padding = 1
 format-font = 3
 
-;label-fail = %output%
-;label-fail-font = 15
-;label-fail-foreground = ${colors.black}
-;format-fail =  <label-fail>
+label-fail = %output%
+label-fail-font = 15
+label-fail-foreground = ${colors.black}
+format-fail =  <label-fail>
 ;format-fail-background = ${colors.bg-alt}
-;format-fail-foreground = ${colors.dark-red}
-;format-fail-padding = 1
-;format-fail-font = 3
+format-fail-foreground = ${colors.dark-red}
+format-fail-padding = 1
+format-fail-font = 3
 
 
