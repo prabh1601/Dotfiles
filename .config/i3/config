@@ -79,6 +79,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Start autotiling package
 exec_always --no-startup-id autotiling
 
+# Start mpd-mpris
+#exec_always --no-startup-id mpd-mpris
+
 
 #*************************************************************************************************************************
 #                                                    WORKSPACES           
@@ -144,6 +147,7 @@ focus_on_window_activation focus
 #assigning specific workspace to apps
 assign [class="discord"] $ws9
 assign [class="whatsapp-nativefier-d40211"] $ws9
+assign [title="Spotify – Web Player"] $ws9
 assign [class="Virt-manager"] $ws10
 
 #*************************************************************************************************************************
@@ -171,6 +175,10 @@ bindsym XF86AudioPrev exec playerctl previous
 #*************************************************************************************************************************
 #                                                    MOVEMENTS-KEYBINDS           
 #*************************************************************************************************************************
+
+#change workspace 
+bindsym --whole-window button8 exec --no-startup-id "~/.scripts/go_back.sh"
+bindsym --whole-window button9 exec --no-startup-id "~/.scripts/go_front.sh"
 
 # minify the screen 
 bindsym $mod+y fullscreen disable, floating enable, resize set 400 300, sticky enable, move window to position 1515 20
@@ -261,8 +269,9 @@ for_window [class="Nitrogen"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Gucharmap"] floating enable
 for_window [class="flameshot"] floating enable
-for_window [title="win0"] floating enable
-
+for_window [class="jetbrains-*"] floating enable
+for_window [class="gnome-calendar"] floating enable
+for_window [class="Cheese"] floating enable
 #*************************************************************************************************************************
 #                                                    GAPS           
 #*************************************************************************************************************************

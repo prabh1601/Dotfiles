@@ -5,8 +5,10 @@ stock=$(curl -s 'https://www.keychron.com/products/keychron-q1-qmk-custom-mechan
 out_of_stock="Available Soon"
 
 if [[ "$stock" != "$out_of_stock" ]] ; then
- 	echo "In Stock!"
-	dunstify -u critical "Keychron Q1 Knob Back in stock" "Run Dude! Before it gets out of stock" 
+ 	echo "IN STOCK!!!!!!"
+	exit 0
+	# dunstify -u critical "Keychron Q1 Knob Back in stock" "Run Dude! Before it gets out of stock" 
 else 
 	echo "Out of Stock"
+	exit -1
 fi
