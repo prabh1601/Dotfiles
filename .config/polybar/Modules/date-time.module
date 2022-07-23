@@ -3,12 +3,12 @@
 type = internal/date
 interval = 1 
 
-date = %a, %d %b
+date = %A, %d %b
 label = %date%
 label-font = 16 
 label-foreground = ${colors.date}
 
-format = %{A1:dunstify "Hello World" "This is a Test Notification":} %{A} <label>
+format = %{A1:gnome-calendar &:} %{A} <label>
 format-foreground = ${colors.light-purple}
 format-background = ${colors.bg-alt}
 format-padding = 1

@@ -169,7 +169,6 @@ handle_image() {
                       -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
                  && exit 6 || exit 1;;
 
-
         ## ePub, MOBI, FB2 (using Calibre)
         # application/epub+zip|application/x-mobipocket-ebook|\
         # application/x-fictionbook+xml)

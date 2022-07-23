@@ -146,9 +146,11 @@ focus_on_window_activation focus
 
 #assigning specific workspace to apps
 assign [class="discord"] $ws9
-assign [class="whatsapp-nativefier-d40211"] $ws9
+assign [class="Slack"] $ws9
+assign [class="whatsapp-nativefier"] $ws9
 assign [title="Spotify – Web Player"] $ws9
 assign [class="Virt-manager"] $ws10
+assign [class="Subl"] $ws2
 
 #*************************************************************************************************************************
 #                                                    MEDIA-KEYBINDS           
@@ -272,6 +274,7 @@ for_window [class="flameshot"] floating enable
 for_window [class="jetbrains-*"] floating enable
 for_window [class="gnome-calendar"] floating enable
 for_window [class="Cheese"] floating enable
+for_window [class="huiontablet"] floating enable
 #*************************************************************************************************************************
 #                                                    GAPS           
 #*************************************************************************************************************************

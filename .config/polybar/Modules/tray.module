@@ -1,4 +1,4 @@
 [module/tray]
 type = custom/text
-content = "            "
+content = "               "
 content-background = ${colors.bg-alt}
