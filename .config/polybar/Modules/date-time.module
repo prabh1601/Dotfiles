@@ -5,12 +5,11 @@ interval = 1
 
 date = %A, %d %b
 label = %date%
-label-font = 16 
+label-font = 20
 label-foreground = ${colors.date}
 
-format = %{A1:gnome-calendar &:} %{A} <label>
+format = %{A1:google-calendar-nativefier &:} %{A}<label>
 format-foreground = ${colors.light-purple}
-format-background = ${colors.bg-alt}
 format-padding = 1
 
 [module/time]
@@ -19,11 +18,10 @@ interval = 1
 
 time = %I : %M : %S %p
 label = %time%
-label-font = 16
+label-font = 20 
 label-foreground = ${colors.date}
 
-format =   <label> 
+format = <label> 
 format-foreground = ${colors.light-purple}
-format-background = ${colors.bg-alt}
 format-padding = 1
 

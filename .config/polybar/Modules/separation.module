@@ -5,6 +5,12 @@ content-background = ${colors.bg-alt}
 content-foreground = ${colors.black}
 content-font = 7
 
+[module/separator-blank]
+type = custom/text
+content = "|"
+content-foreground = ${colors.black}
+content-font = 7
+
 [module/blank_space]
 type = custom/text
 content = " "
