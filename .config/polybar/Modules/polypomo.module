@@ -6,11 +6,10 @@ tail = true
 
 label = %output%
 format-foreground = ${colors.new}
+label-font = 21 
 click-left = ~/.config/polybar/Modules/polypomo/polypomo toggle
 click-right = ~/.config/polybar/Modules/polypomo/polypomo end
 click-middle = ~/.config/polybar/Modules/polypomo/polypomo lock
 scroll-up = ~/.config/polybar/Modules/polypomo/polypomo time +60
 scroll-down = ~/.config/polybar/Modules/polypomo/polypomo time -60
 
-font-0 = fixed:pixelsize=10;1
-font-1 = Noto Emoji:scale=15:antialias=false;0

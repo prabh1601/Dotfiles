@@ -23,8 +23,8 @@ format-charging-padding = 1
 label-discharging-font = 14
 label-discharging-foreground = ${colors.cream}
 format-discharging = %{T18}%{T-} <label-discharging>  
-format-discharging-background = ${colors.bg-alt}
 format-discharging-foreground = ${colors.green}
+format-discharging-background = ${colors.bg-alt}
 format-discharging-padding = 1
 
 label-low-font = 14

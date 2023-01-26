@@ -21,9 +21,8 @@ type = internal/network
 interface-type = wireless
 interval = 0.5
 
-format-connected = %{A1:nm-connection-editor:} %{A} <label-connected>
+format-connected =<label-connected>
 format-connected-foreground = ${colors.green}
-format-connected-background = ${colors.bg-alt}
 format-connected-padding = 1
 label-connected =     %downspeed%     %upspeed%
 label-connected-font = 15
@@ -31,9 +30,8 @@ label-connected-foreground = ${colors.brownish-cream}
 
 format-disconnected = %{A1:nm-connection-editor:}睊 %{A}<label-disconnected>
 format-disconnected-foreground = ${colors.dark-red}
-format-disconnected-background = ${colors.bg-alt}
 format-disconnected-padding = 1
 label-disconnected = Off
-label-disconnected-foreground = ${colors.black}
+label-disconnected-foreground = ${colors.network}
 label-disconnected-font = 15
 

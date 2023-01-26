@@ -30,8 +30,8 @@ font pango:DejaVu Sans Mono 8
 #       BORDERS       #
 #######################
 
-default_border pixel 2
-default_floating_border pixel 2
+# You can also use any non-zero value if you'd like to have a border
+for_window [class=".*"] border pixel 2
 
 client.focused #C3B1E1 #C3B1E1 #C3B1E1 #FF6961 #a8dadc
 
@@ -150,7 +150,6 @@ assign [class="Slack"] $ws9
 assign [class="whatsapp-nativefier"] $ws9
 assign [title="Spotify – Web Player"] $ws9
 assign [class="Virt-manager"] $ws10
-assign [class="Subl"] $ws2
 
 #*************************************************************************************************************************
 #                                                    MEDIA-KEYBINDS           
@@ -273,6 +272,8 @@ for_window [class="Gucharmap"] floating enable
 for_window [class="flameshot"] floating enable
 for_window [class="jetbrains-*"] floating enable
 for_window [class="gnome-calendar"] floating enable
+for_window [class="googlecalendar-nativefier-e22938"] floating enable
+for_window [class="kalendar"] floating enable
 for_window [class="Cheese"] floating enable
 for_window [class="huiontablet"] floating enable
 #*************************************************************************************************************************

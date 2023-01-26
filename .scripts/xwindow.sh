@@ -11,6 +11,8 @@ elif [ $WM_DESKTOP != "1883" ]; then
 		echo "Custom Name"
 	elif [[ "$WM_NAME" == "WhatsApp" || "$WM_NAME" == "Google Chrome" || "$WM_CLASS" == "Google-chrome" ]]; then
 		echo " $WM_NAME "
+	elif [[ "$WM_CLASS" == " googlecalendar-nativefier-e22938 " ]]; then
+		echo " Google Calendar "
 	else 
 		echo "$WM_CLASS"
 	fi
