@@ -1,6 +1,19 @@
 # Enable colors and change prompt
 autoload -U colors && colors
-PS1=$'\n'"[%f%B%F{red}%n%f%b@%B%F{blue}%m%f%b:%B%F{magenta}%~%f%b] "
+
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | sed 's!refs/heads/!!')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo -e $'('$branch')'
+  fi
+}
+setopt prompt_subst
+
+PS1=$'\n''%F{yellow}$(git_branch_name)%f'$'\n'"[%f%B%F{red}%n%f%b@%B%F{blue}%m%f%b:%B%F{magenta}%~%f%b] "
 
 setopt correct
 
